@@ -1,40 +1,147 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+<h1 align="center"><b>💼 JobBoard – Admin Job Management System</b></h1>
 
-## Getting Started
+![Demo Screenshot](/pp.png)
 
-First, run the development server:
+## 📌 Introduction
+**JobBoard** is a full-stack application that allows an **admin** to create and manage job postings through a sleek, modern UI. It includes a responsive job listing page with filters and a fully functional job creation modal — built using **Next.js**, **Mantine UI**, **NestJS**, and **PostgreSQL**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## ✨ Features
+
+- 🧾 **Create Job Postings**: Add job title, company, type, salary, deadline & more
+- 🧭 **Filterable Job List**: Filter jobs by title, type, location, or salary range
+- 📦 **PostgreSQL Integration**: Persistent storage of all job data
+- 🔁 **Realtime Form Validation**: Built with `React Hook Form`
+- 🎨 **Responsive UI**: Designed with Mantine for seamless cross-device support
+- 🎯 **Custom Theming**: Consistent black styling on all form field focus rings
+- 🔐 **Backend with NestJS**: REST API architecture using TypeORM
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology       | Purpose                                   |
+|------------------|--------------------------------------------|
+| **Next.js**       | Frontend framework                        |
+| **Mantine**       | Component library (UI styling)            |
+| **React Hook Form** | Form validation & management            |
+| **NestJS**        | Backend API & business logic              |
+| **PostgreSQL**    | Relational database                       |
+| **TypeORM**       | ORM to connect NestJS with PostgreSQL     |
+
+---
+
+## 📂 Folder Structure
+
+```shell
+JobBoard/
+├── backend/                      # NestJS backend app
+│   ├── src/
+│   │   ├── job/                  # Job module: controller, service, entity
+│   │   ├── app.module.ts         # Module registration
+│   │   └── main.ts               # Entry point
+│   └── .env                      # PostgreSQL credentials
+│
+├── frontend/                     # Next.js frontend app
+│   ├── components/               # Header, JobCard, CreateJobModal, etc.
+│   ├── pages/
+│   │   └── index.js              # Job listing page
+│   ├── styles/                   # Global and component-specific CSS
+│   ├── public/                   # Static assets (e.g. screenshot.png)
+│   └── _app.js                   # MantineProvider & global theme
+│
+├── .gitignore                           # Ignored files for git
+├── package.json                         # Project dependencies and scripts
+├── tsconfig.json                        # TypeScript compiler configuration
+└── README.md                            # 📖 Project overview and documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Want to set this up locally? Follow these steps:
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1. **📦 Install PostgreSQL (Without Docker)**: Download from: https://www.postgresql.org/download
+2. **Backend Setup (NestJS + TypeORM)**: 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+```bash
+cd backend
+cp .env.example .env     # Fill in PostgreSQL details
+npm install
+npm run start:dev
+```
+This runs your API on: http://localhost:5000
+3. 🖥️ Frontend Setup (Next.js)
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **Visit the Local Server**: Open your browser and navigate to the local server URL.
+5. This runs your app on: http://localhost:3000
+---
 
-## Learn More
+## 📱 Mobile Support
 
-To learn more about Next.js, take a look at the following resources:
+Fully responsive across:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+- 📱 iOS / Android Phones  
+- 💻 Desktop & Tablets  
+- ✅ Built with `@media` queries and responsive layout principles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📧 Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 💼 [Portfolio Website](http://sandhit.tech/)
+- 📧 Email: [sandhitkarmakar@gmail.com](mailto:sandhitkarmakar@gmail.com)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/sandhit-karmakar/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+---
+
+
+## 🌟 Show Your Support
+If you liked the Netflix Portfolio:
+
+- ⭐ Star the repo
+
+- 🔀 Fork and customize
+
+- 🤝 Connect on LinkedIn
+
+---
+
+## Still need help?
+Open an issue on our GitHub repository, and we will help you as soon as possible.
+
+Enjoy exploring and extending this project! Feel free to contribute and suggest improvements.
+
+---
+
+## Developer
+<table>
+    <tr align="center">
+        <td>
+        Sandhit Karmakar
+        <p align="center">
+            <img src = "https://avatars.githubusercontent.com/u/90787826?v=4" width="150" height="150" alt="Dhruv Shah">
+        </p>
+            <p align="center">
+                <a href = "https://github.com/Sandhit06">
+                    <img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36" alt="GitHub"/>
+                </a>
+                <a href = "https://www.linkedin.com/in/sandhit-karmakar/" target="_blank">
+                    <img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36" alt="LinkedIn"/>
+                </a>
+                <a href = "mailto:sandhitkarmakar@gmail.com" target="_blank">
+                    <img src = "https://www.iconninja.com/files/312/807/734/share-send-email-chat-circle-message-mail-icon.svg" width="36" height="36" alt="Email"/>
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+
+<p align="center">
+    Made with ❤️ by <a href="https://github.com/Sandhit06">Sandhit Karmakar</a>
+</p>
