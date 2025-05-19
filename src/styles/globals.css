@@ -40,3 +40,22 @@ a {
     color-scheme: dark;
   }
 }
+
+.black-focus-input:focus,
+.black-focus-input:focus-within {
+  border-color: black !important;
+  box-shadow: 0 0 0 1px black !important;
+}
+
+.black-input {
+  border-color: black !important;
+  box-shadow: none !important;
+}
+
+/* Remove Mantine's blue focus ring globally */
+[data-mantine-color-scheme] input:focus,
+[data-mantine-color-scheme] textarea:focus,
+[data-mantine-color-scheme] select:focus {
+  border-color: black !important;
+  box-shadow: 0 0 0 1px black !important;
+}
