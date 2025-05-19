@@ -1,6 +1,6 @@
 <h1 align="center"><b>💼 JobBoard – Admin Job Management System</b></h1>
 
-![Demo Screenshot](/screenshot.png)
+![Demo Screenshot](/pp.png)
 
 ## 📌 Introduction
 **JobBoard** is a full-stack application that allows an **admin** to create and manage job postings through a sleek, modern UI. It includes a responsive job listing page with filters and a fully functional job creation modal — built using **Next.js**, **Mantine UI**, **NestJS**, and **PostgreSQL**.
