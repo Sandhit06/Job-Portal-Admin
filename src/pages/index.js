@@ -13,12 +13,12 @@ export default function HomePage() {
     <MantineProvider withGlobalStyles withNormalizeCSS>
       <Head>
         <title>Job Portal Demo | Sandhit Karmakar</title>
-        <meta name="description" content="Explore Sandhit Karmakar's job portal demo with job listings, filters, and a job creation interface." />
+        <meta name="description" content="Sandhit Karmakar is a full-stack developer building interactive web applications. Explore his Next.js job portal demo with job listings, search filters and a job creation interface." />
         <meta name="author" content="Sandhit Karmakar" />
         <link rel="canonical" href="https://job-portal-admin-puce.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Job Portal Demo | Sandhit Karmakar" />
-        <meta property="og:description" content="Explore Sandhit Karmakar's job portal demo with job listings, filters, and a job creation interface." />
+        <meta property="og:description" content="Sandhit Karmakar is a full-stack developer building interactive web applications. Explore his Next.js job portal demo with job listings, search filters and a job creation interface." />
         <meta property="og:url" content="https://job-portal-admin-puce.vercel.app/" />
         <meta name="twitter:card" content="summary" />
       </Head>
