@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useState } from 'react';
 import { MantineProvider, Divider, Box } from '@mantine/core';
 import HeaderNav from '../components/HeaderNav';
@@ -10,6 +11,17 @@ export default function HomePage() {
 
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
+      <Head>
+        <title>Job Portal Demo | Sandhit Karmakar</title>
+        <meta name="description" content="Explore Sandhit Karmakar's job portal demo with job listings, filters, and a job creation interface." />
+        <meta name="author" content="Sandhit Karmakar" />
+        <link rel="canonical" href="https://job-portal-admin-puce.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Job Portal Demo | Sandhit Karmakar" />
+        <meta property="og:description" content="Explore Sandhit Karmakar's job portal demo with job listings, filters, and a job creation interface." />
+        <meta property="og:url" content="https://job-portal-admin-puce.vercel.app/" />
+        <meta name="twitter:card" content="summary" />
+      </Head>
       <HeaderNav onCreateClick={() => setModalOpen(true)} />
       <FilterBar />
 
